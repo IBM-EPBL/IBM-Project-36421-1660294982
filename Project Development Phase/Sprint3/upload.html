@@ -1,0 +1,31 @@
+{% extends "basel.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Upload</title>
+</head>
+<center>
+<body background="https://w.wallha.com/ws/1/VwLlk1Xb.jpg">
+	<br>
+	<h1>Select Image to Upload</h1>
+	<br>
+	<form action="{{ url_for("uploader")}}" method="POST" enctype = "multipart/form-data">
+      	
+      	<input type="file" name="file">
+      	<br><br>
+
+        <input type="submit" name="upload">
+        <br><br>
+        <span style="color:red">{{ itemmsg }}</span>
+ 
+    </form>
+	
+
+</body>
+</center>
+</html>
+{% endblock %}
