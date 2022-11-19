@@ -1,0 +1,21 @@
+{% extends "basel.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+
+
+
+
+<html>
+<body style="background-color:grey;">
+<center>
+<body >
+<form action="upload.php" method="post" enctype="multipart/form-data"><br><br><br><br><br><br>
+<center>
+<h2 style="font-size: 35px;"> SELECT IMAGE TO UPLOAD</h2><br><br><br> </br></br></center>
+<input style= "font-size: 25px;"  type="file" name="fileToUpload" id="fileToUpload">
+<input style= "font-size: 25px;" type="submit" value="Upload Image" name="submit"></br>
+</form> 
+</center>
+</body>
+</html>
+{% endblock %}
