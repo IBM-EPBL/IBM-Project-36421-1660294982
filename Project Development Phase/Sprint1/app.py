@@ -29,9 +29,7 @@ def dash():
 def upload():
     return render_template("upload.html")
 
-@app.route("/feedback")
-def feedback():
-    return render_template("feedback.html")
+
 
 @app.route("/about")
 def about():
