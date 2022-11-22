@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Signin Page{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in</title>
+</head>
+<center>
+<body background="https://w.wallha.com/ws/1/VwLlk1Xb.jpg" >
+    <h1 >Sign In</h1>
+ 
+    <form action="{{ url_for("signinv")}}" method="POST">
+        <label>Username:</label>
+        <input type="text" name="usernamel">
+        <span style="color:red">{{ userstatusl }}</span>
+        <br><br>
+        
+        <label>Password:</label>
+        <input type="password" name="passwdl">
+        <span style="color:red">{{ passwdstatusl }}</span>
+        <br><br>
+
+        <input type="submit" name="signin">
+        <br><br>
+        <span style="color:red">{{ msgl }}</span>
+ 
+    </form>
+</body>
+</center>
+ 
+</html>
+{% endblock %}

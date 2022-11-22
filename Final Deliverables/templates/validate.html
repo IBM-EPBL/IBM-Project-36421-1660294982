@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Validate Page{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validation Page</title>
+</head>
+<center>
+<body background="https://w.wallha.com/ws/1/VwLlk1Xb.jpg" >
+
+<h1>OTP is sent to your mail</h1>
+    <form action="{{ url_for("checkotp")}}" method="POST">
+        <label>Enter OTP:</label>
+        <input type="number" id="otp" name="otp">
+        <span style="color:red">{{ status }}</span>
+        <br><br>
+
+        <input type="submit" name="signup">
+        <br><br>
+    </form>
+
+</body>
+</center>
+</html>
+{% endblock %}

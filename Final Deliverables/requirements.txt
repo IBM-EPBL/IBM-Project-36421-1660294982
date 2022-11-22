@@ -1,0 +1,4 @@
+flask
+sendgrid
+ibm_db
+clarifai-grpc

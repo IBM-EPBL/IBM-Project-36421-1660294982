@@ -1,0 +1,29 @@
+{% extends "basel.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nutrition Values</title>
+</head>
+<center>
+	<body background="https://w.wallha.com/ws/1/VwLlk1Xb.jpg">
+		<br>
+		<h1 style="color: deeppink;">The image is detected by Clarifai AI
+        <br>
+		<h2 style="color: black;">The image is {{ item }} </h2>
+		<br><br>
+        <h1 style="color: deeppink;">The Nutritional Values are</h1>
+  
+		{%for i in range(0, lstlen)%}
+		
+    	<h2 style="color: black;">{{lst[i]}}</h2>
+		{%endfor%}
+	
+	</body>
+</center>
+</html>
+{% endblock %}
